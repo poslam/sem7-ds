@@ -8,3 +8,8 @@ ipykernel
 ipywidgets
 black[jupyter]
 scipy
+optuna
+lightgbm
+catboost
+xgboost
+nltk
