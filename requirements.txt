@@ -13,3 +13,4 @@ lightgbm
 catboost
 xgboost
 nltk
+python-dotenv
