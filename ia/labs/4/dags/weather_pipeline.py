@@ -198,10 +198,8 @@ def weather_pipeline():
 
         os.makedirs(VISUALIZATION_PATH, exist_ok=True)
 
-        # Создание визуализации результатов модели
         fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
-        # График: Предсказанные vs Реальные значения
         y_true = model_results["y_true"]
         y_pred = model_results["y_pred"]
 
@@ -219,7 +217,6 @@ def weather_pipeline():
         axes[0].legend()
         axes[0].grid(True, alpha=0.3)
 
-        # График: История температуры из CSV
         df = pd.read_csv(csv_path)
         if len(df) > 0:
             axes[1].plot(
